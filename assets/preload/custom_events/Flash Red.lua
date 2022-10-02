@@ -1,0 +1,10 @@
+-- Event notes hooks
+function onEvent(name, value1, value2)
+	if name == 'Flash Red' then
+			makeLuaSprite('flash', 'red', 0, 0);
+			setObjectCamera('flash', 'hud');
+			addLuaSprite('flash', true);
+			doTweenColor('flashcolour', 'flash', 'FF0000', 0.01, 'linear');
+			doTweenAlpha('flashalpha', 'flash', 0, 0.15, 'linear');
+		end
+    end
